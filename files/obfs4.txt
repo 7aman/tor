@@ -1,0 +1,65 @@
+### ------------------------------------------------------------------- ###
+### --------------------------- Main Setting -------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### Use `SocksPort` in socks5 proxy setting of your application.
+### If it is occupied by another process, change it here.
+
+SocksPort       49050
+ControlPort     49051
+
+### ------------------------------------------------------------------- ###
+### ------------------------------ Bridge ----------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### value must be 1 to use obfs4 bridges.
+UseBridges 1
+
+### use to force exit node
+#ExitNodes {ca},{us} StrictNodes 0
+
+### obfs4
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit exec lyrebird.exe
+Bridge obfs4 185.154.164.24:7923 F40F24464DA48061AC5387A490207B5D8046CAA9 cert=/+HbwP3GVhN1VOdYK2IRkE4UoLtvkTwW5+7aoTPl8T7j1tVVsyEOsZ8VM/WrpAnhWO2nZw iat-mode=0
+Bridge obfs4 23.92.219.78:443 FACE4AFA0912B991DB9B8C79F10012AB4758DE65 cert=YkpNelyQjMUTFjN5GrUjWtw3/Bs1JuxarFLc/vbfEluQwyKXm8u0ZxbfS6ZtTsrHJIqcGw iat-mode=0
+Bridge obfs4 64.44.34.109:443 374A24F93AEDA29F5353125A83F64903B1A9D7C3 cert=+CPj5cM3tYLXiQt11BSATK+zsWuyblTqZ6bfG2/8l5ZFOm+WXb1COOampQeUEA+xJCm7bg iat-mode=0
+Bridge obfs4 69.130.135.110:33579 EC467C898D4CEA69CAC90E2F4057491ADF5BDAB1 cert=qEuUBC9l0wdL7Ox8MpxtAzJHbuoIRaMQN5a8ekKK/IqD9M1pgxKo4TB7rMOMVy0kzzwEGw iat-mode=0
+Bridge obfs4 193.182.111.183:80 AD9793C9EE87FF1DF9E606E9C33CBFB9F5632C7A cert=0LcaKyUFLc72eNwxFaYkyOSkDOfMWsIHRLZRbrHfmM6/KXWN55Be/6pPijYGOiXC7rM5XA iat-mode=0
+Bridge obfs4 104.244.77.118:3479 B24551DCDBC5FB43C143C970BF293A90B8BDEAEF cert=GJrzS3ArhjR/OWLgJLHDlCphYCmLP4WQf8JxQ11bsJVY/KlGsbVz6zV6iu5DqtYymqoIBw iat-mode=0
+Bridge obfs4 116.203.245.38:5488 B0B9A43D06DEAEC58303786BA2F25BC0636CAB48 cert=x/KFAK+49k4C0zbSE86oCbUnYkBCCQaEmeisGNI18JU0UloIrxWwUzDtVw0CiU0GVvG8Kg iat-mode=0
+Bridge obfs4 185.177.207.150:8443 9E40D6DB60FA802E702E8162139FCBCC8273602B cert=oauhCaudcB6P+wAq7VxwJ1VlB8izw/zYOEy3Kga/6AMHoSmbDGrTK9Mqb4L7G/D54xbyOw iat-mode=0
+Bridge obfs4 49.12.35.49:4443 7902F1823AB53427463B8C552AC501F1CC5136CE cert=/MxPLbShmmS4KWVo0OFjHnmxM+emc8yMd+GEIZbrLYUHsWDrM5OykKtJY8C/wEtN9mtQQQ iat-mode=0
+Bridge obfs4 89.58.41.128:443 CDEC44A10F12F828EC3265180B5C4301F7519ACE cert=REONxtHVPNkJAaA+SGv1mPSueLgdIowmfnGmpXEHsanr3jChXh5Tz8FBiDwVQwot5sZtfw iat-mode=0
+Bridge obfs4 95.208.160.41:16385 893BF7D9387C6D9D1121C46C5E01635978FB00C1 cert=JbsSyn1JH16XWkycIG3cIrptJZA9a4tQbnB0+APnNhbZfBz5iAECdOlJrUx0tqYqac/ZSA iat-mode=0
+Bridge obfs4 51.81.12.58:10001 30F7EE7C5D68E0EE3CF5C939F1345A22475C25BE cert=FwgpQMY4zHRtkZm7gSUUekh8bUqjlIAcWFtHDH3/cXAeMBNgYAdrtvvsU2Q2T4gPTMlYMw iat-mode=0
+Bridge obfs4 144.24.178.125:45678 C2692C95857C065084F3B545661455E5563D9E10 cert=mLKvxnrK1uT48m1EW3R/C951dbOF7B0ksVneICuEku/zGVJWLwgLV/x9iVBLqc/oTu52Ng iat-mode=0
+Bridge obfs4 192.95.36.142:443 CDF2E852BF539B82BD10E27E9115A31734E378C2 cert=qUVQ0srL1JI/vO6V6m/24anYXiJD3QP2HgzUKQtQ7GRqqUvs7P+tG43RtAqdhLOALP7DJQ iat-mode=1
+Bridge obfs4 37.218.245.14:38224 D9A82D2F9C2F65A18407B1D2B764F130847F8B5D cert=bjRaMrr1BRiAW8IE9U5z27fQaYgOhX1UCmOpg2pFpoMvo6ZgQMzLsaTzzQNTlm7hNcb+Sg iat-mode=0
+Bridge obfs4 85.31.186.98:443 011F2599C0E9B27EE74B353155E244813763C3E5 cert=ayq0XzCwhpdysn5o0EyDUbmSOx3X/oTEbzDMvczHOdBJKlvIdHHLJGkZARtT4dcBFArPPg iat-mode=0
+Bridge obfs4 85.31.186.26:443 91A6354697E6B02A386312F68D82CF86824D3606 cert=PBwr+S8JTVZo6MPdHnkTwXJPILWADLqfMGoVvhZClMq/Urndyd42BwX9YFJHZnBB3H0XCw iat-mode=0
+Bridge obfs4 193.11.166.194:27015 2D82C2E354D531A68469ADF7F878FA6060C6BACA cert=4TLQPJrTSaDffMK7Nbao6LC7G9OW/NHkUwIdjLSS3KYf0Nv4/nQiiI8dY2TcsQx01NniOg iat-mode=0
+Bridge obfs4 193.11.166.194:27020 86AC7B8D430DAC4117E9F42C9EAED18133863AAF cert=0LDeJH4JzMDtkJJrFphJCiPqKx7loozKN7VNfuukMGfHO0Z8OGdzHVkhVAOfo1mUdv9cMg iat-mode=0
+Bridge obfs4 193.11.166.194:27025 1AE2C08904527FEA90C4C4F8C1083EA59FBC6FAF cert=ItvYZzW5tn6v3G4UnQa6Qz04Npro6e81AP70YujmK/KXwDFPTs3aHXcHp4n8Vt6w/bv8cA iat-mode=0
+Bridge obfs4 209.148.46.65:443 74FAD13168806246602538555B5521A0383A1875 cert=ssH+9rP8dG2NLDN2XuFw63hIO/9MNNinLmxQDpVa+7kTOa9/m+tGWT1SmSYpQ9uTBGa6Hw iat-mode=0
+Bridge obfs4 146.57.248.225:22 10A6CD36A537FCE513A322361547444B393989F0 cert=K1gDtDAIcUfeLqbstggjIw2rtgIKqdIhUlHp82XRqNSq/mtAjp1BIC9vHKJ2FAEpGssTPw iat-mode=0
+Bridge obfs4 45.145.95.6:27015 C5B7CD6946FF10C5B3E89691A7D3F2C122D2117C cert=TD7PbUO0/0k6xYHMPW3vJxICfkMZNdkRrb63Zhl5j9dW3iRGiCx0A7mPhe5T2EDzQ35+Zw iat-mode=0
+Bridge obfs4 51.222.13.177:80 5EDAC3B810E12B01F6FD8050D2FD3E277B289A08 cert=2uplIpLQ0q9+0qMFrK5pkaYRDOe460LL9WHBvatgkuRr/SL31wBOEupaMMJ6koRE6Ld0ew iat-mode=0
+
+### ------------------------------------------------------------------- ###
+### ------------------------- Other Settings--------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### Do not Modify.
+
+#ClientUseIPv4 1
+#ClientUseIPv6 0
+GeoIPFile 			C:\Tor\geoip
+GeoIPv6File 		C:\Tor\geoip6
+DataDirectory 		C:\Tor\Data
+ClientOnionAuthDir 	C:\Tor\Data
+TruncateLogFile     1
+Log notice-notice stdout
+#Log warn-warn file C:\Tor\Data\warn.log
+#Log err-err file C:\Tor\Data\error.log
+#Log debug-debug file C:\Tor\Data\debug.log
+#Log info-info file C:\Tor\Data\info.log

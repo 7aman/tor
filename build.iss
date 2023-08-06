@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Tor"
-#define MyAppVersion "4.7.12"
+#define MyAppVersion "4.7.14"
 #define MyAppPublisher "7aman"
 #define MyAppURL "https://github.com/7aman/tor"
 #define MyAppId "0F51DA06-62E9-4C2A-8B0D-E110E62A27EF"
@@ -39,7 +39,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Files]
 Source: "files\*"; DestDir: "{app}"; Flags: ignoreversion
 Source: "files\*.lnk"; DestDir: "{userdesktop}"; Flags: ignoreversion
-Source: "tor-expert-bundle\*"; DestDir: "{app}"; Flags: ignoreversion
+Source: "tor\*"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Dirs]
