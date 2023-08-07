@@ -2,10 +2,14 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Tor"
-#define MyAppVersion "4.7.12"
+#define MyAppVersion "4.7.14"
 #define MyAppPublisher "7aman"
 #define MyAppURL "https://github.com/7aman/tor"
 #define MyAppId "0F51DA06-62E9-4C2A-8B0D-E110E62A27EF"
+
+#if Exec(SourcePath + "\torch\build.bat") != 0
+  #error building 'torch.exe' failed
+#endif
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -26,7 +30,7 @@ AllowNoIcons=yes
 InfoAfterFile=readme.md
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 PrivilegesRequired=lowest
-OutputDir=build
+OutputDir=dist
 OutputBaseFilename=Tor-Installer-v{#MyAppVersion}
 SetupIconFile=files\icon.ico
 Compression=lzma
@@ -39,7 +43,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Files]
 Source: "files\*"; DestDir: "{app}"; Flags: ignoreversion
 Source: "files\*.lnk"; DestDir: "{userdesktop}"; Flags: ignoreversion
-Source: "tor-expert-bundle\*"; DestDir: "{app}"; Flags: ignoreversion
+Source: "tor\*"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Dirs]

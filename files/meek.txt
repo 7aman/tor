@@ -1,0 +1,42 @@
+### ------------------------------------------------------------------- ###
+### --------------------------- Main Setting -------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### Use `SocksPort` in socks5 proxy setting of your application.
+### If it is occupied by another process, change it here.
+
+SocksPort       49050
+ControlPort     49051
+
+### ------------------------------------------------------------------- ###
+### ------------------------------ Bridge ----------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### value must be 1 to use meek bridges.
+UseBridges 1
+
+### use to force exit node
+#ExitNodes {ca},{us} StrictNodes 0
+
+### meek
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit exec lyrebird.exe
+Bridge meek_lite 192.0.2.18:80 BE776A53492E1E044A26F17306E1BC46A55A1625 url=https://meek.azureedge.net/ front=ajax.aspnetcdn.com
+
+### ------------------------------------------------------------------- ###
+### ------------------------- Other Settings--------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### Do not Modify.
+
+#ClientUseIPv4 1
+#ClientUseIPv6 0
+GeoIPFile 			C:\Tor\geoip
+GeoIPv6File 		C:\Tor\geoip6
+DataDirectory 		C:\Tor\Data
+ClientOnionAuthDir 	C:\Tor\Data
+TruncateLogFile     1
+Log notice-notice stdout
+#Log warn-warn file C:\Tor\Data\warn.log
+#Log err-err file C:\Tor\Data\error.log
+#Log debug-debug file C:\Tor\Data\debug.log
+#Log info-info file C:\Tor\Data\info.log

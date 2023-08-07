@@ -16,10 +16,10 @@
 └── tor
     ├── geoip
     ├── geoip6
-    ├── obfs4proxy.exe
+    ├── lyrebird.exe
     ├── snowflake-client.exe
     ├── tor.exe
     └── tor-gencert.exe
 ```
 
-- Open `build.iss` with `InnoSetup` and Compile. Installer executable will be created in `build` directory.
+- Open `build.iss` with `InnoSetup` and Compile. Installer executable will be created in `dist` directory.

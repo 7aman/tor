@@ -1,0 +1,43 @@
+### ------------------------------------------------------------------- ###
+### --------------------------- Main Setting -------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### Use `SocksPort` in socks5 proxy setting of your application.
+### If it is occupied by another process, change it here.
+
+SocksPort       49050
+ControlPort     49051
+
+### ------------------------------------------------------------------- ###
+### ------------------------------ Bridge ----------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### value must be 1 to use snowflake
+UseBridges 1
+
+### use to force exit node
+#ExitNodes {ca},{us} StrictNodes 0
+
+### Snowflake
+ClientTransportPlugin snowflake  exec snowflake-client.exe
+Bridge snowflake 192.0.2.4:80 8838024498816A039FCBBAB14E6F40A0843051FA fingerprint=8838024498816A039FCBBAB14E6F40A0843051FA url=https://snowflake-broker.torproject.net.global.prod.fastly.net/ front=cdn.sstatic.net ice=stun:stun.l.google.com:19302,stun:stun.altar.com.pl:3478,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.com:3478,stun:stun.sonetel.net:3478,stun:stun.stunprotocol.org:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
+Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://snowflake-broker.torproject.net.global.prod.fastly.net/ front=cdn.sstatic.net ice=stun:stun.l.google.com:19302,stun:stun.altar.com.pl:3478,stun:stun.antisip.com:3478,stun:stun.bluesip.net:3478,stun:stun.dus.net:3478,stun:stun.epygi.com:3478,stun:stun.sonetel.com:3478,stun:stun.sonetel.net:3478,stun:stun.stunprotocol.org:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.voys.nl:3478 utls-imitate=hellorandomizedalpn
+
+### ------------------------------------------------------------------- ###
+### ------------------------- Other Settings--------------------------- ###
+### ------------------------------------------------------------------- ###
+
+### Do not Modify.
+
+#ClientUseIPv4 1
+#ClientUseIPv6 0
+GeoIPFile 			C:\Tor\geoip
+GeoIPv6File 		C:\Tor\geoip6
+DataDirectory 		C:\Tor\Data
+ClientOnionAuthDir 	C:\Tor\Data
+TruncateLogFile     1
+Log notice-notice stdout
+#Log warn-warn file C:\Tor\Data\warn.log
+#Log err-err file C:\Tor\Data\error.log
+#Log debug-debug file C:\Tor\Data\debug.log
+#Log info-info file C:\Tor\Data\info.log
