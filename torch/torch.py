@@ -13,7 +13,7 @@ def print_ip(title, direct=False):
 
 
 if __name__ == "__main__":
-    print('Running...')
+    print('torch: change tor identity')
     try:
         with Controller.from_port(port=CONTROL_PORT) as controller:
             controller.authenticate()

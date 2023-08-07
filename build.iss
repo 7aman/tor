@@ -8,7 +8,7 @@
 #define MyAppId "0F51DA06-62E9-4C2A-8B0D-E110E62A27EF"
 
 #if Exec(SourcePath + "\torch\build.bat") != 0
-    #error The build batch has failed
+  #error building 'torch.exe' failed
 #endif
 
 [Setup]

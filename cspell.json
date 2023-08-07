@@ -6,7 +6,8 @@
     "words": [
         "gencert",
         "geoip",
-        "Inno"
+        "Inno",
+        "obfs"
     ],
     "ignoreWords": [],
     "import": []
