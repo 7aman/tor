@@ -7,6 +7,10 @@
 #define MyAppURL "https://github.com/7aman/tor"
 #define MyAppId "0F51DA06-62E9-4C2A-8B0D-E110E62A27EF"
 
+#if Exec(SourcePath + "\torch\build.bat") != 0
+    #error The build batch has failed
+#endif
+
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
@@ -26,7 +30,7 @@ AllowNoIcons=yes
 InfoAfterFile=readme.md
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 PrivilegesRequired=lowest
-OutputDir=build
+OutputDir=dist
 OutputBaseFilename=Tor-Installer-v{#MyAppVersion}
 SetupIconFile=files\icon.ico
 Compression=lzma
